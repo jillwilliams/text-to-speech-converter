@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: "Raleway";
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#010758,#490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 647px;
+    height: 400px;
+    border: 2px white solid;
+    background-color: #0738D7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* text: converter */
+.container span {
+    color: red;
+    text-decoration: underline white;
+}
+
+/* text: text to speech converter */
+.hero h1 {
+    color: #010758;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* the input field */
+textarea {
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    background: #403d84;
+    color: white;
+    font-size: 25px;
+    font-family: inherit;
+    padding: 10px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* the bottom row div*/
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* the arrow down icon */
+.fa-circle-down {
+    color: white;
+    z-index: 100;
+    margin-right: 200px;
+    font-size: 40px;
+    position: absolute;
+    left: 345px;
+    bottom: 5px;
+}
+
+
+
+/* button */
+button {
+    background: #ff2963;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    transition: 1s;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff2963;
+    border: 2px solid #ff2963;
+    transition: 1s;
+    scale: 1.1;
+}
+
+/* the arrow icon */
+.fa-play {
+    margin-left: 10px;
+}
+
+/* the voices drop down menu */
+select {
+    /* flex: 1; */
+    width: 344px;
+    color: white;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 35px;
+    margin-left: 50px;
+    appearance: none;
+}
