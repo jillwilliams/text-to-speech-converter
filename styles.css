@@ -84,8 +84,6 @@ textarea::placeholder {
     bottom: 5px;
 }
 
-
-
 /* button */
 button {
     background: #ff2963;
@@ -123,3 +121,38 @@ select {
     margin-left: 50px;
     appearance: none;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 360px;
+        height: 400px;
+    }
+    textarea {
+        width: 340px;
+        height: 200px;
+    }
+    .row {
+        width: 340px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .fa-circle-down {
+        /* margin-right: 130px; */
+        font-size: 30px;
+        position: absolute;
+        left: 160px;
+        bottom: 12px;
+    }
+    select {
+        width: 200px;
+        height: 50px;
+        padding: 0 10px;
+        margin-left: 5px;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px 15px;
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+}   
